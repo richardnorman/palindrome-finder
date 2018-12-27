@@ -12,7 +12,8 @@ namespace PalindromeFinder
 
             //A palindrome must read the same from reverse and regular
 
-            var palindromeFound = IterateThroughPalindrome(word);
+            //Lower prevents capitalization issues that may result in a palindrome being considered a non palindrome
+            var palindromeFound = IterateThroughPalindrome(word.ToLower());
 
             if (palindromeFound)
             {
